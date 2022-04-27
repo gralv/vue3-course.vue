@@ -1,7 +1,8 @@
 <template>
     <div class="app">
         <post-form @create="createPost"/>
-        <post-list v-bind:posts="posts" v-on:remove="removePost"/>
+        <post-list v-bind:posts="posts"
+                   v-on:remove="removePost"/>
     </div>
 </template>
 
