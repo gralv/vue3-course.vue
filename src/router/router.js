@@ -3,6 +3,7 @@ import Main from "@/pages/Main";
 import PostPage from "@/pages/PostPage";
 import About from "@/pages/About";
 import PostIdPages from "@/pages/PostIdPages";
+import PostPageWithStore from "@/pages/PostPageWithStore";
 
 const routes = [
     {

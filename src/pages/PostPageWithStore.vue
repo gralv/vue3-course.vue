@@ -1,5 +1,16 @@
 <template>
     <div>
+        <h1>{{ $store.getters.doubleLikes }}</h1>
+        <div>
+            <my-button class="btn" @click="$store.commit('incrementLikes')"
+                >Likes</my-button
+            >
+        </div>
+        <div>
+            <my-button class="btn" @click="$store.commit('decrementLikes')"
+                >Dislikes</my-button
+            >
+        </div>
         <h1>Страница с постами</h1>
         <my-input v-focus v-model="searchQuery" placeholder="Поиск..." />
         <div class="app__btns">
@@ -98,8 +109,8 @@ export default {
                 const response = await axios.get(
                     "https://jsonplaceholder.typicode.com/posts",
                     {
+                        _page: this.page,
                         params: {
-                            _page: this.page,
                             _limit: this.limit,
                         },
                     }
