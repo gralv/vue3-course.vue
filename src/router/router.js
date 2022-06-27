@@ -1,26 +1,29 @@
-import {createRouter, createWebHistory} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Main from "@/pages/Main";
 import PostPage from "@/pages/PostPage";
 import About from "@/pages/About";
 import PostIdPages from "@/pages/PostIdPages";
 
-
 const routes = [
     {
-        path: '/',
-        component: Main
+        path: "/",
+        component: Main,
     },
     {
-        path: '/posts',
-        component: PostPage
+        path: "/posts",
+        component: PostPage,
     },
     {
-        path: '/about',
-        component: About
+        path: "/about",
+        component: About,
     },
     {
-        path: '/posts/:id',
-        component: PostIdPages
+        path: "/posts/:id",
+        component: PostIdPages,
+    },
+    {
+        path: "/store",
+        component: PostPageWithStore,
     },
 ];
 

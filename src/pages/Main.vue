@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Hello Vue3</h1>
+        Hello Vue3
         <router-link to="/posts">Посты</router-link>
         <router-link to="/about">О сайте</router-link>
     </div>
